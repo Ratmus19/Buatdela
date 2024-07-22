@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cewek Cantik</title>
+  <style>
+  body {
+            background-image: url('https://raw.githubusercontent.com/Ratmus19/Foto/main/gelap.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+  .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Mengatur tinggi container agar sesuai dengan tinggi layar */
+        }
+
+        .button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+  </style>
+</head>
+<body>
+  
+  <div class="container">
+<button class="button" id="tombol">Klik Jika Ingin Melihat Cewek Cantik</button>
+
+
+<script>
+document.getElementById('tombol').addEventListener('click', function() {
+    // Buka halaman web lain
+    window.location.href = 'https://cewek-cantik.netlify.app/';
+    
+    // Putar musik
+    var audio = document.getElementById('audio');
+    audio.play();
+    
+    // Hentikan pemutaran musik setelah 5 detik
+    setTimeout(function() {
+        audio.pause();
+    }, 10000); // 5000 milidetik = 5 detik
+});
+</script>
+
+</body>
+</html>
